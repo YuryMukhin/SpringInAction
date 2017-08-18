@@ -10,11 +10,4 @@
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.7" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
-  <component name="SvnConfiguration" myUseAcceleration="nothing">
-    <configuration>C:\Users\ymukhin\AppData\Roaming\Subversion</configuration>
-    <option name="sshConnectionType" value="PRIVATE_KEY" />
-    <option name="sshUserName" value="ebiryuk" />
-    <option name="sshPort" value="31242" />
-    <option name="sshPrivateKeyPath" value="D:\Keys\ebiryuk-key" />
-  </component>
 </project>

@@ -16,6 +16,13 @@
 
     <aop:config>
         <aop:aspect ref="audience">
+            <aop:pointcut id="performance2" expression="execution(* IdolCompetition.Performer.perform(..))"/>
+
+            <aop:around method="watchPerformance"
+                        pointcut-ref="performance2"/>
+        </aop:aspect>
+
+        <!--<aop:aspect ref="audience">
             <aop:pointcut id="performance" expression="execution(* IdolCompetition.Performer.perform(..))"/>
             <aop:before
                     pointcut-ref="performance"
@@ -32,7 +39,7 @@
             <aop:after-throwing
                     pointcut-ref="performance"
                     method="demandRefund"/>
-        </aop:aspect>
+        </aop:aspect>-->
     </aop:config>
 </beans>
 
