@@ -8,7 +8,7 @@ public class Piano implements Instrument {
 
     }
 
-    @Override public void play() {
+    public void play() {
         System.out.println("IdolCompetition.Piano");
     }
 }

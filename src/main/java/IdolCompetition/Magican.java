@@ -7,6 +7,7 @@ public class Magican implements MindReader {
     private String thoughts;
 
     public String getThoughts() {
+        //System.out.println(thoughts);
         return thoughts;
     }
 

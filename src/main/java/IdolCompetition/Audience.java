@@ -33,7 +33,7 @@ public class Audience {
             long end = System.currentTimeMillis();
 
             System.out.println("Clap clap clap");
-            System.out.print("Time "+ (end - start));
+            System.out.println("Time "+ (end - start));
 
         }catch (Throwable t){
             System.out.println("Boo! We want our money back");

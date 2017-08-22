@@ -1,5 +1,7 @@
 package IdolCompetition;
 
+import org.springframework.beans.factory.annotation.Value;
+
 /**
  * Created by ymukhin on 8/18/2017.
  */
@@ -11,6 +13,6 @@ public class Volunteer implements Thinker{
     }
 
     public void thinkOfSmth(String thoughts) {
-        this.thoughts = thoughts;
+        this.thoughts += thoughts;
     }
 }
