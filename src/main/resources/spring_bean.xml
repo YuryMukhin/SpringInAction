@@ -12,6 +12,8 @@
 
     </context:component-scan>
 
+    <aop:aspectj-autoproxy/>
+
     <bean id="audience" class="IdolCompetition.Audience"/>
 
     <bean id="magican" class="IdolCompetition.Magican"/>
