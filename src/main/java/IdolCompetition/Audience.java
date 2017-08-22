@@ -2,6 +2,7 @@ package IdolCompetition;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
+import org.springframework.context.annotation.Bean;
 
 /**
  * Created by ymukhin on 8/17/2017.

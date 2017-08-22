@@ -19,32 +19,32 @@
     <bean id="magican" class="IdolCompetition.Magican"/>
 
     <bean id="volunteer" class="IdolCompetition.Volunteer"/>
+    <!--
+        <aop:config>
+            <aop:aspect ref="audience">
+                <aop:pointcut id="performance2" expression="execution(* IdolCompetition.Performer.perform())"/>
 
-    <aop:config>
-       <!-- <aop:aspect ref="audience">
-            <aop:pointcut id="performance2" expression="execution(* IdolCompetition.Performer.perform())"/>
+                <aop:around method="watchPerformance"
+                            pointcut-ref="performance2"/>
+            </aop:aspect>
 
-            <aop:around method="watchPerformance"
-                        pointcut-ref="performance2"/>
-        </aop:aspect>
--->
-        <aop:aspect ref="magican">
-            <aop:pointcut id="thinking" expression="execution(* IdolCompetition.Thinker.thinkOfSmth(String)) and args(thoughts)"/>
+            <aop:aspect ref="magican">
+                <aop:pointcut id="thinking" expression="execution(* IdolCompetition.Thinker.thinkOfSmth(String)) and args(thoughts)"/>
 
-            <aop:before method="interceptThoughts"
-                        pointcut-ref="thinking"
-                        arg-names="thoughts"/>
+                <aop:before method="interceptThoughts"
+                            pointcut-ref="thinking"
+                            arg-names="thoughts"/>
 
-        </aop:aspect>
+            </aop:aspect>
 
-        <!--
+
         <aop:aspect>
             <aop:declare-parents types-matching="IdolCompetition.Performer+"
                                  implement-interface="IdolCompetition.Contestant"
                                  default-impl="IdolCompetition.GraciousContestant"/>
         </aop:aspect>
-        -->
-        <!--<aop:aspect ref="audience">
+
+        <aop:aspect ref="audience">
             <aop:pointcut id="performance" expression="execution(* IdolCompetition.Performer.perform(..))"/>
             <aop:before
                     pointcut-ref="performance"
@@ -61,8 +61,9 @@
             <aop:after-throwing
                     pointcut-ref="performance"
                     method="demandRefund"/>
-        </aop:aspect>-->
+        </aop:aspect>
     </aop:config>
+        -->
 </beans>
 
 <!--
