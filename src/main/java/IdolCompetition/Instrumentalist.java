@@ -12,7 +12,7 @@ public class Instrumentalist implements Performer {
     public Instrumentalist() {
     }
 
-    @Override public void perform() {
+    public void perform() {
         instrument.play();
         System.out.println(this.song);
         System.out.println(" INstrument");
