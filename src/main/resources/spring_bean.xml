@@ -19,6 +19,25 @@
     <bean id="magican" class="IdolCompetition.Magican"/>
 
     <bean id="volunteer" class="IdolCompetition.Volunteer"/>
+
+
+<!--
+    <bean class="IdolCompetition.judgeAspect">
+        <property name="criticismEngine" ref="criticismEngine"/>
+    </bean>
+
+    <bean id="criticismEngine"
+          class="IdolCompetition.CriticismEngineImpl">
+        <property name="criticismPool">
+            <list>
+                <value>Good</value>
+                <value>Bad</value>
+                <value>So so</value>
+            </list>
+        </property>
+    </bean>
+-->
+
     <!--
         <aop:config>
             <aop:aspect ref="audience">
